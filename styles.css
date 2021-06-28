@@ -19,7 +19,7 @@ h4 {
 }
 .jumbotron {
   /* background-color: #f4511e; */
-  background-image: url("images/smileBlack.jpg");
+  background-image: url("images/smileblack.jpg");
   background-size: cover;
   height: 100%;
   color: #fff;
@@ -28,7 +28,7 @@ h4 {
 }
 
 .blank{
-  background-image: url("images/smileWhite.jpg");
+  background-image: url("images/smilewhite.jpg");
   background-size: cover;
   height: 100%;
   /* color: #fff; */
