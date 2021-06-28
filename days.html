@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Days on Earth by SoFO</title>
+    <style media="screen">
+      body{
+        text-align: center;
+        background-image: url("images/bridge.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10% 20% 0 20%;
+      }
+      h1{
+        color: #D7B19D;
+      }
+      h4{
+        font-size: 1.5rem;
+        color: #FFEAC9;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>DAYS ON EARTH</h1>
+    <h4>With a century as the benchmark (definitely some people will live much longer), simply input your age in figures at the prompt and see your result</h4>
+<button type="button" name="button">Input Age</button>
+
+
+
+<script type="text/javascript">
+document.querySelector("button").addEventListener("click", myFunction);
+
+function myFunction(age) {
+  var askAge = prompt("How old are you?");
+
+    var yearsRemaining = 100 - askAge;
+    var days = yearsRemaining * 365;
+    var weeks = yearsRemaining * 52;
+    var months = yearsRemaining * 12;
+
+    alert("You are " + askAge + "years old.\n\nIf you will live up to a century, you have:\n" + days + " in days left.\n" + weeks + " in weeks left.\n" + months + " in months left.");
+  }
+
+</script>
+  </body>
+  <footer>Brought to you by <a href="index.html" target="_blank">SoFO</a></footer>
+</html>

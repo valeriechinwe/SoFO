@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoFO Love Calculator</title>
+
+  <style media="screen">
+    body {
+      text-align: center;
+      padding: 7% 12% 0 12%;
+      background: linear-gradient(to right, #eecda3, #ef629f);
+    }
+
+    h1 {
+      color: #F9F9F9;
+      font-size: 2.3rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-style: italic;
+      color: #343A40;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #0A1D37;
+      font-family: sans-serif;
+    }
+
+    .input-container {
+      display: flex;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .icon {
+      padding: 10px;
+      background: dodgerblue;
+      color: white;
+      min-width: 50px;
+      text-align: center;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      outline: none;
+    }
+
+    .input-field:focus {
+      border: 2px solid dodgerblue;
+    }
+
+    .btn {
+      background-color: dodgerblue;
+      color: white;
+      padding: 15px 20px;
+      font-size: 1.2rem;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    .btn:hover {
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>THE LOVE CALCULATOR</h1>
+  <h3> FIND OUT THE PROBABILITY OF A SUCCESSFUL RELATIONSHIP</h3>
+  <p>Sometimes you would like to know if a relationship with someone could work out. To find out what the chances for you and your dream partner are, just fill in both full names (both first and last name) in the two text boxes below and click
+    Calculate to get the percentage</p>
+
+  <!-- <table class="tbl">
+    <tr>
+      <th>YOUR NAME</th>
+      <th>PARTHNER'S NAME</th>
+      <td><input type="text" name="" value="type here"></td>
+    </tr>
+  </table> -->
+
+  <form>
+    <div class="input-container">
+      <input class="input-field" type="text" placeholder="Enter your full name" name="usrnm">
+    </div>
+
+    <div class="input-container">
+      <input class="input-field" type="text" placeholder="Enter your partner's full name" name="email">
+    </div>
+
+    <button type="submit" class="btn">Calculate love</button>
+  </form>
+
+<script type="text/javascript">
+document.querySelector("button").addEventListener("click", myFunction);
+
+function myFunction() {
+  var loveNum = Math.floor((Math.random() * 100) + 1);
+
+if (loveNum <= 45) {
+  alert("Your score is " + loveNum + "%. Your partner might just NOT be the one.")
+} else if (loveNum <= 75) {
+  alert("Your score is " + loveNum + "%. Your partner might just be THE ONE.")
+} else if (loveNum <= 100) {
+  alert("Your score is " + loveNum + "%. Your partner is THE ONE.")
+}
+}
+
+</script>
+</body>
+
+<footer>Love Calculator by <a href="index.html" target="_blank">SoFO</footer>
+
+</html>
